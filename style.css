@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colortitulos: #8c2574;
+    --colortextos: #777777;
+    --colorbotones: #8c2574;
+    --colorfondo: #A381F2;
+    --paddinsecciones: 60px 0;
+    --marginelementos: 40px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddinsecciones);
+}
+
+.menu-nav {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.logo img {
+    display: block;
+    margin-top: 8px;
+    border-radius: 50%;
+    height: 80%;
+}
+
+.enlaces li {
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #000000;
+    padding-left: 10px;
+}
+
+.hero {
+    height: 500px;
+    background-image: url('./imagenes/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-text {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.boton {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: var(--colorbotones);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Main */
+
+.title-section {
+    text-align: center;
+    font-size: 35px;
+    color: var(--colortitulos);
+}
+
+.copy {
+    text-align: center;
+    color: var(--colortextos);
+    margin: 20px 0;
+}
+
+.beneficios {
+    padding-top: var(--marginelementos);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-image: url(imagenes/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.proyects {
+    background: #f2f2f2;
+}
+
+.container-img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container-img img {
+    display: block;
+    width: 30%;
+    box-shadow: 0 0 8px rgb(0, 0, 0, .4);
+    margin-bottom: var(--marginelementos);
+}
+
+footer .title-section {
+    color: var(--colortitulos);
+}
+
+footer .copy {
+    color: #000000;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales i {
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:800px){
+    .menu-nav{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+    }
+    .hero h1{
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    .hero p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .boton{
+        margin-bottom:50px ;
+    }
+    .beneficio{
+        margin-bottom: 40px;
+    }
+    .container-img img{
+        width: 90%;
+    }
+    .copy{
+        margin-bottom: 40px;
+    }
+}
